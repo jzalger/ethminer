@@ -70,7 +70,7 @@ jobs:
        mkdir build
        cd build
        cmake .. -DETHASHCUDA=OFF -DETHASHCL=OFF -DBINKERN=OFF
-       cmake . -build
+       cmake --build .
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
